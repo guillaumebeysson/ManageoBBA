@@ -34,11 +34,11 @@ const rollDice = random => {
                 break;
             case 3:
                 dice.style.transform = 'rotateX(0deg) rotateY(90deg)';
-                message.innerHTML = 'Garde espoir';
+                message.innerHTML = 'Garde espoir !';
                 break;
             case 4:
                 dice.style.transform = 'rotateX(0deg) rotateY(-90deg)';
-                message.innerHTML = 'Ca devrait le faire';
+                message.innerHTML = 'Ca devrait le faire !';
                 break;
             default:
                 break;
