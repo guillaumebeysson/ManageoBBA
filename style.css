@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     outline: 0;
-    box-sizing: border-box;
+
 }
 
 body {
@@ -17,7 +17,8 @@ body {
 .container {
     display: grid;
     place-items: center;
-    width: 350px;
+    width: 250px;
+    height: 300px;
     padding: 60px 0 40px;
     border-radius: 30px;
     background: #eeeeee;
@@ -163,4 +164,15 @@ body {
 .message {
     font: 700 16px 'Montserrat';
     margin: 20px 0;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+
+        padding: 60px 0 40px;
+        border-radius: 30px;
+        margin: 0 10px;
+        background: #eeeeee;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    }
 }
