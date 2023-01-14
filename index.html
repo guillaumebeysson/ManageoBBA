@@ -1,29 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Qui va appeler ?</title>
+    <title>Manageo BBA</title>
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
     <!-- JS File -->
     <script src="script.js" type="text/javascript" defer></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="container">
-        <div class="dice">
-            <div class="face front"></div>
-            <div class="face back"></div>
-            <div class="face top"></div>
-            <div class="face bottom"></div>
-            <div class="face right"></div>
-            <div class="face left"></div>
-        </div>
-        <button class="roll">
-            Lance
-        </button>
-        <p class="message"></p>
+    <div class="burger">
+        <span></span>
     </div>
+    <nav>
+        <ul class="right-part-line-bar">
+            <li><a href="">Classiques</a></li>
+            <li><a href="">Gourmets</a></li>
+            <li><a href="">Signatures</a></li>
+            <li><a href="">Smashs</a></li>
+            <li><a href="">Wrap Quesadillas</a> </li>
+            <li><a href="">Tacos Kebab</a></li>
+            <li><a href="">Big burgers</a></li>
+            <li><a href="">Desserts Boissons</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="presentation">
+            <div id="presentationInfos">
+                <h1>Que vas-tu choisir
+                    à midi ?
+                </h1>
+                <div>
+                    <p>Petite ou grande faim,</p>
+                    <p>tu trouveras ton bonheur</p>
+                </div>
+                <button>Uniquement le mercredi</button>
+            </div>
+            <div id="imgPresentation">
+                <img src="assets/presentation.jpg" alt="">
+            </div>
+        </section>
+        <section id="sectionDice">
+            <h1>Qui va appeler ?</h1>
+            <div class="containerDice">
+                <div class="dice">
+                    <div class="face front"></div>
+                    <div class="face back"></div>
+                    <div class="face top"></div>
+                    <div class="face bottom"></div>
+                    <div class="face right"></div>
+                    <div class="face left"></div>
+                </div>
+                <button class="roll">
+                    Lance
+                </button>
+                <p class="message"></p>
+            </div>
+
+        </section>
+    </div>
+    <script src="burger.js"></script>
 </body>
 </html>
