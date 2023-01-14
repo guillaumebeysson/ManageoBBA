@@ -4,6 +4,7 @@
     border: 0;
     outline: 0;
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -320,6 +321,7 @@ span.h2-line {
 .BurgerInCategory {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 200px;
     margin: 50px;
 }
@@ -332,10 +334,11 @@ span.h2-line {
     color: #AAAAAA;
     font-size: 12px;
     text-align: center;
+    height: 75px;
 }
 
 .AllPricesInCategory {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .burgerPrice {
