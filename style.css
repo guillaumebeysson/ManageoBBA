@@ -249,7 +249,7 @@ Dice Styles
 }
 
 /*
-    Message
+    Message Dice
 */
 .message {
     font: 700 16px 'Montserrat';
@@ -257,7 +257,82 @@ Dice Styles
     color: #AAAAAA;
 }
 
-/******************** BURGER MENU ****************************/
+h2 {
+    color: #FAB21D;
+    font-size: xx-large;
+    margin: 50px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    margin: 15px 0;
+    color: #fff;
+}
+
+h4 {
+    margin-left: 20px;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+/*
+    Section Category burger
+*/
+.allBurgersCategory {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.BurgerInCategory {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 50px;
+}
+
+.BurgerInCategory img {
+    border-radius: 30px;
+}
+
+.BurgerTitleDescription p {
+    color: #AAAAAA;
+    font-size: 12px;
+    text-align: center;
+}
+
+.AllPricesInCategory {
+    margin-top: 20px;
+}
+
+.burgerPrice {
+    color: #FAB21D;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.burgerPrice .SoloOrMenu {
+    display: flex;
+    align-items: center;
+}
+
+.burgerPrice button {
+    background-color: #FAB21D;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.burgerPrice button .fa-plus {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/******************** BURGER MENU NAV ****************************/
 .burger {
     display: none;
 }
@@ -335,5 +410,28 @@ Dice Styles
         padding: 0;
         left: 0px;
         transition: left 0.8s ease-in-out;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #presentation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #presentationInfos {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #presentationInfos button {
+        margin: 20px auto;
     }
 }
