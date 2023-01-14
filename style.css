@@ -480,4 +480,16 @@ span.h2-line {
     #presentationInfos button {
         margin: 20px auto;
     }
+
+    .burgerPrice button:hover .fa-plus {
+        transform: rotate(0deg);
+    }
+
+    .BurgerInCategory {
+        margin: 8px;
+    }
+
+    .BurgerInCategory {
+        width: 150px;
+    }
 }
