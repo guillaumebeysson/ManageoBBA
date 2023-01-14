@@ -12,6 +12,27 @@ body {
 }
 
 /*
+    Back-up
+*/
+#back-up {
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border: solid 2px #2a2a2a;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1s;
+}
+
+#back-up i {
+    font-size: xx-large;
+    color: #FAB21D;
+}
+
+/*
     Nav
 */
 nav {
@@ -260,9 +281,11 @@ Dice Styles
 h2 {
     color: #FAB21D;
     font-size: xx-large;
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -275,6 +298,13 @@ h4 {
     margin-left: 20px;
     font-size: x-large;
     font-weight: 800;
+}
+
+span.h2-line {
+    border: solid 1px #FAB21D;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
 }
 
 /*
@@ -325,11 +355,21 @@ h4 {
     border-radius: 10px;
     width: 30px;
     height: 30px;
+    transition: all 0.3s;
+}
+
+.burgerPrice button:hover {
+    cursor: pointer;
+}
+
+.burgerPrice button:hover .fa-plus {
+    transform: rotate(90deg);
 }
 
 .burgerPrice button .fa-plus {
     font-size: x-large;
     font-weight: bold;
+    transition: all 0.3s;
 }
 
 /******************** BURGER MENU NAV ****************************/
