@@ -7,7 +7,7 @@
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
     <!-- JS File -->
-    <script src="script.js" type="text/javascript" defer></script>
+    <script src="dice.js" type="text/javascript" defer></script>
     <!--jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Font awesome-->
@@ -34,6 +34,12 @@
         </ul>
     </nav>
     <div class="container">
+        <section>
+            <input type="text" id="username" placeholder="Nom" >
+            <button id="valideUsername">ok</button>
+            <button id="voirCommande" >Voir la commande</button>
+            <p id="ajoutname" style="color: aliceblue;"></p>
+        </section>
         <section id="presentation">
             <div id="presentationInfos">
                 <h1>Que vas-tu choisir
@@ -477,6 +483,9 @@
             </div>
         </section>
     </div>
+
+    <script type="module" src="firebaseConfig.js"></script>
+
     <script src="burger.js"></script>
     <script src="back-up.js"></script>
 </body>
