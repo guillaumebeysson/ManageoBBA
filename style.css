@@ -95,6 +95,12 @@ h1 {
     font-size: 60px;
 }
 
+#ecrisCommande {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
 #presentation p {
     color: #AAAAAA;
     font-size: 20px;
@@ -323,11 +329,13 @@ span.h2-line {
     background-color: #000000;
     transition: .2s;
 }
+
 .validBtn:hover {
     color: #000000;
     background: #FAB21D;
 }
-input#username{
+
+input#username {
     width: 200px;
     font: 700 16px 'Montserrat';
     padding: 12px 20px;
@@ -338,7 +346,8 @@ input#username{
     border: solid 2px #FAB21D;
     color: #fff;
 }
-input#menu{
+
+input#menu {
     width: 100%;
     font: 700 16px 'Montserrat';
     padding: 12px 20px;
