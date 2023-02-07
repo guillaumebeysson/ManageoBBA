@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <title>Manageo BBA</title>
     <!-- Montserrat Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
     <!-- JS File -->
@@ -14,6 +17,7 @@
     <script src="https://kit.fontawesome.com/ddd8de2320.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <a id="back-up" href="#nav">
         <i class="fa-solid fa-caret-up"></i>
@@ -34,12 +38,6 @@
         </ul>
     </nav>
     <div class="container">
-        <section>
-            <input type="text" id="username" placeholder="Nom" >
-            <button id="valideUsername">ok</button>
-            <button id="voirCommande" >Voir la commande</button>
-            <p id="ajoutname" style="color: aliceblue;"></p>
-        </section>
         <section id="presentation">
             <div id="presentationInfos">
                 <h1>Que vas-tu choisir
@@ -72,6 +70,13 @@
                 <p class="message"></p>
             </div>
         </section>
+        <section>
+            <input type="text" id="username" placeholder="Nom" required>
+            <input type="text" id="menu" placeholder="menu" required></input>
+            <button class="validBtn" id="valid">ok</button>
+            <button class="validBtn" id="voirCommande">Voir les commandes</button>
+            <p id="commande" style="color: aliceblue;"></p>
+        </section>
         <section class="typesBurgers" id="classiques">
             <div>
                 <h2>Les classiques</h2>
@@ -82,7 +87,8 @@
                     <img src="assets/burgers/campagnard.jpg" alt="">
                     <div class="BurgerTitleDescription">
                         <h3>Classic Cheese</h3>
-                        <p>Viande fraiche, double mild cheddar Anglais, oignons confits maison, salade, tomate et pain artisanal</p>
+                        <p>Viande fraiche, double mild cheddar Anglais, oignons confits maison, salade, tomate et pain
+                            artisanal</p>
                     </div>
                     <div class="AllPricesInCategory">
                         <div class="burgerPrice">
@@ -128,7 +134,8 @@
                     <img src="assets/burgers/campagnard.jpg" alt="">
                     <div class="BurgerTitleDescription">
                         <h3>Chicken burger</h3>
-                        <p>Aiguillettes de poulet pané, double mild cheddar Anglais, oignons confits, salade, tomates</p>
+                        <p>Aiguillettes de poulet pané, double mild cheddar Anglais, oignons confits, salade, tomates
+                        </p>
                     </div>
                     <div class="AllPricesInCategory">
                         <div class="burgerPrice">
@@ -174,7 +181,8 @@
                     <img src="assets/burgers/campagnard.jpg" alt="">
                     <div class="BurgerTitleDescription">
                         <h3>Végéta</h3>
-                        <p>Sans viande, mozzarella, galette de pomme de terre, oignons confits, huile d'olive, ail en poudre</p>
+                        <p>Sans viande, mozzarella, galette de pomme de terre, oignons confits, huile d'olive, ail en
+                            poudre</p>
                     </div>
                     <div class="AllPricesInCategory">
                         <div class="burgerPrice">
@@ -197,7 +205,8 @@
                     <img src="assets/burgers/campagnard.jpg" alt="">
                     <div class="BurgerTitleDescription">
                         <h3>Végéta 2.0</h3>
-                        <p>Sans viande, mozzarella, galette de pomme de terre, avocat, balsamique, oignons confits, huile d'olive, ail en poudre</p>
+                        <p>Sans viande, mozzarella, galette de pomme de terre, avocat, balsamique, oignons confits,
+                            huile d'olive, ail en poudre</p>
                     </div>
                     <div class="AllPricesInCategory">
                         <div class="burgerPrice">
@@ -214,274 +223,274 @@
                             </div>
                             <button><i class="fa-solid fa-plus"></i></button>
                         </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <section class="typesBurgers" id="gourmets">
+        <div>
+            <h2>Les gourmets</h2>
+            <span class="h2-line"></span>
+        </div>
+        <div class="allBurgersCategory">
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-        </section>
-        <section class="typesBurgers" id="gourmets">
-            <div>
-                <h2>Les gourmets</h2>
-                <span class="h2-line"></span>
-            </div>
-            <div class="allBurgersCategory">
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
-                    </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                    </div>
+    </section>
+    <section class="typesBurgers" id="signatures">
+        <div>
+            <h2>Les Signatures</h2>
+            <span class="h2-line"></span>
+        </div>
+        <div class="allBurgersCategory">
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
                 </div>
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
                         </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
-                    </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="typesBurgers" id="signatures">
-            <div>
-                <h2>Les Signatures</h2>
-                <span class="h2-line"></span>
-            </div>
-            <div class="allBurgersCategory">
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
+        </div>
+    </section>
+    <section class="typesBurgers" id="smashs">
+        <div>
+            <h2>Les Smashs</h2>
+            <span class="h2-line"></span>
+        </div>
+        <div class="allBurgersCategory">
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
                         </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="typesBurgers" id="smashs">
-            <div>
-                <h2>Les Smashs</h2>
-                <span class="h2-line"></span>
-            </div>
-            <div class="allBurgersCategory">
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
+        </div>
+    </section>
+    <section class="typesBurgers" id="wrap">
+        <div>
+            <h2>Les wrap et Quesadillas</h2>
+            <span class="h2-line"></span>
+        </div>
+        <div class="allBurgersCategory">
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
                         </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="typesBurgers" id="wrap">
-            <div>
-                <h2>Les wrap et Quesadillas</h2>
-                <span class="h2-line"></span>
-            </div>
-            <div class="allBurgersCategory">
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
+        </div>
+    </section>
+    <section class="typesBurgers" id="tacos">
+        <div>
+            <h2>Les tacos et kebab</h2>
+            <span class="h2-line"></span>
+        </div>
+        <div class="allBurgersCategory">
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
                         </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="typesBurgers" id="tacos">
-            <div>
-                <h2>Les tacos et kebab</h2>
-                <span class="h2-line"></span>
-            </div>
-            <div class="allBurgersCategory">
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
+        </div>
+    </section>
+    <section class="typesBurgers" id="big">
+        <div>
+            <h2>Les big burgers</h2>
+            <span class="h2-line"></span>
+        </div>
+        <div class="allBurgersCategory">
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
                         </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="typesBurgers" id="big">
-            <div>
-                <h2>Les big burgers</h2>
-                <span class="h2-line"></span>
-            </div>
-            <div class="allBurgersCategory">
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
+        </div>
+    </section>
+    <section class="typesBurgers" id="desserts">
+        <div>
+            <h2>Les desserts et boissons</h2>
+            <span class="h2-line"></span>
+        </div>
+        <div class="allBurgersCategory">
+            <div class="BurgerInCategory">
+                <img src="assets/burgers/campagnard.jpg" alt="">
+                <div class="BurgerTitleDescription">
+                    <h3>Classic Cheese</h3>
+                    <p>Salade, tomates, oignons</p>
+                </div>
+                <div class="AllPricesInCategory">
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Solo</p>
+                            <h4>10€</h4>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
+                    <div class="burgerPrice">
+                        <div class="SoloOrMenu">
+                            <p>Menu</p>
+                            <h4>14€</h4>
                         </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="typesBurgers" id="desserts">
-            <div>
-                <h2>Les desserts et boissons</h2>
-                <span class="h2-line"></span>
-            </div>
-            <div class="allBurgersCategory">
-                <div class="BurgerInCategory">
-                    <img src="assets/burgers/campagnard.jpg" alt="">
-                    <div class="BurgerTitleDescription">
-                        <h3>Classic Cheese</h3>
-                        <p>Salade, tomates, oignons</p>
-                    </div>
-                    <div class="AllPricesInCategory">
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Solo</p>
-                                <h4>10€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                        <div class="burgerPrice">
-                            <div class="SoloOrMenu">
-                                <p>Menu</p>
-                                <h4>14€</h4>
-                            </div>
-                            <button><i class="fa-solid fa-plus"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
     </div>
 
     <script type="module" src="firebaseConfig.js"></script>
@@ -489,4 +498,5 @@
     <script src="burger.js"></script>
     <script src="back-up.js"></script>
 </body>
+
 </html>

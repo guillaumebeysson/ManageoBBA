@@ -309,6 +309,48 @@ span.h2-line {
 }
 
 /*
+    username and menu
+*/
+.validBtn {
+    cursor: pointer;
+    color: #FAB21D;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font: 700 16px 'Montserrat';
+    border: 2px solid #FAB21D;
+    background-color: #000000;
+    transition: .2s;
+}
+.validBtn:hover {
+    color: #000000;
+    background: #FAB21D;
+}
+input#username{
+    width: 200px;
+    font: 700 16px 'Montserrat';
+    padding: 12px 20px;
+    border-radius: 3px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    border: solid 2px #FAB21D;
+    color: #fff;
+}
+input#menu{
+    width: 100%;
+    font: 700 16px 'Montserrat';
+    padding: 12px 20px;
+    border-radius: 3px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #000000;
+    border: solid 2px #FAB21D;
+    color: #fff;
+}
+
+/*
     Section Category burger
 */
 .allBurgersCategory {
