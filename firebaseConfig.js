@@ -45,23 +45,54 @@ function save() {
         date: Date.now(),
     })
         .then(() => {
-            alert("donnée envoyée");
+            alert("commande envoyée");
+            console.log("commande envoyée")
         })
         .catch((error) => {
             alert("erreur " + error);
         });
 }
 
-//read data
+// function selectData() {
+//     db.ref.once(username.value, function (snapshot) {
+//         console.log(snapshot.val());
+//     })
+// }
+
+// read data
+// function selectData() {
+//     const dbref = ref(db);
+//     get(child(dbref, username.value))
+//         .then((snapshot) => {
+//             if (snapshot.exists()) {
+//                 username.value = snapshot.val().username;
+//                 console.log(snapshot.val());
+//                 menu.value = snapshot.val().menu;
+//                 document.getElementById("commande").innerHTML =
+//                     snapshot.val().username.toUpperCase() + ": " + snapshot.val().menu;
+//             } else {
+//                 alert("No data found");
+//             }
+//         })
+//         .catch((error) => {
+//             alert("erreur " + error);
+//         });
+// }
+
 function selectData() {
     const dbref = ref(db);
-    get(child(dbref, username.value))
+    get(dbref, username.value)
         .then((snapshot) => {
             if (snapshot.exists()) {
                 username.value = snapshot.val().username;
-                menu.value = snapshot.val().menu;
+                // console.log(snapshot.val());
+                var data = snapshot.val();
+                for (let i in data) {
+                    console.log(data[i])
+                }
                 document.getElementById("commande").innerHTML =
-                    snapshot.val().username.toUpperCase() + ": " + snapshot.val().menu;
+                    snapshot.val().toUpperCase();
+                menu.value = snapshot.val().menu;
             } else {
                 alert("No data found");
             }
@@ -70,6 +101,8 @@ function selectData() {
             alert("erreur " + error);
         });
 }
+
+
 
 valid.addEventListener("click", save);
 voirCommande.addEventListener("click", selectData);
