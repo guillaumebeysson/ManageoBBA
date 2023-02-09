@@ -11,6 +11,12 @@ body {
     background: #000000;
     font: 700 16px 'Montserrat';
 }
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
 
 /*
     Back-up

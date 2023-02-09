@@ -36,6 +36,7 @@ const db = getDatabase();
 var username = document.getElementById("username");
 var valid = document.getElementById("valid");
 var menu = document.getElementById("menu");
+var masquer = document.getElementById("masquerCommande");
 
 // Push en base
 function save() {
@@ -84,17 +85,30 @@ function selectData() {
   const dbref = ref(db);
   get(dbref, username.value)
     .then((snapshot) => {
+      var data = snapshot.val();
+      document.getElementById("commande").innerHTML = "";
       if (snapshot.exists()) {
-        username.value = snapshot.val().username;
-        // console.log(snapshot.val());
-        var data = snapshot.val();
         for (let i in data) {
           console.log(data[i]);
+          // transforme la date sous forme de timestamp en DD/MM/YYYY
+          let timestamp = data[i].date;
+          let date = new Date(timestamp);
+          let options = {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+          };
+          let formattedDate = date.toLocaleDateString("fr-FR", options);
+          // récupère le nom
+          let name = data[i].username;
+          // récupère le menu
+          let menu = data[i].menu;
+          // push la date, le nom et le menu en html
+          document.getElementById("commande").innerHTML +=
+            formattedDate + ": " + name.toUpperCase() + " --> " + menu + "<br>";
+          // document.getElementById("masquerCommande").innerHTML =
+          //   "<button id='btnMasquerCommande' class='validBtn'>Masquer les commandes</button>";
         }
-        document.getElementById("commande").innerHTML = snapshot
-          .val()
-          .toUpperCase();
-        menu.value = snapshot.val().menu;
       } else {
         alert("No data found");
       }
@@ -104,5 +118,11 @@ function selectData() {
     });
 }
 
+// function masquerCommande() {
+//   document.getElementById("btnMasquerCommande").classList.add("hidden");
+//   document.getElementById("commande").classList.add("hidden");
+// }
+
+// masquer.addEventListener("click", masquerCommande);
 valid.addEventListener("click", save);
 voirCommande.addEventListener("click", selectData);
