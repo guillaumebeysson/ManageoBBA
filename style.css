@@ -21,6 +21,20 @@ body {
 }
 
 /*
+    Message pop up
+*/
+.messagePop {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FAB21D;
+    display: none;
+    transition: all 3s ease-in-out;
+}
+
+/*
     Back-up
 */
 #back-up {
