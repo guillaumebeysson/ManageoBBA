@@ -37,6 +37,8 @@ var username = document.getElementById("username");
 var valid = document.getElementById("valid");
 var menu = document.getElementById("menu");
 var commandes = document.getElementById("commande");
+let messagePop = document.getElementById("messagePop");
+
 
 // Push en base
 function save() {
@@ -46,7 +48,11 @@ function save() {
         date: Date.now(),
     })
         .then(() => {
-            alert("commande envoyée");
+            messagePop.innerHTML = "<i class='fa-solid fa-check'></i> commande validée";
+            messagePop.classList.add("view");
+            setTimeout(function () {
+                messagePop.classList.remove("view");
+            }, 4000);
             console.log("commande envoyée");
         })
         .catch((error) => {
