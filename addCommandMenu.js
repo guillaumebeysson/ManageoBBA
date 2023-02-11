@@ -1,4 +1,5 @@
 
+// Fonction pour ajouter les burgers dasns l'input de commande et pop up pou l'affichage
 let buttons = document.querySelectorAll("button[data-info]");
 let input = document.getElementById("menu");
 let messagePop = document.getElementById("messagePop");
@@ -15,6 +16,13 @@ for (let btn of buttons) {
         messagePop.classList.add("view");
         setTimeout(function () {
             messagePop.classList.remove("view");
-        }, 4000);
+        }, 3000);
     });
 }
+
+
+// fonction pour delete pour supprimer le contenu de l'input des menus
+let btnDeleteMenuInput = document.getElementById("deleteValueInputMenu");
+btnDeleteMenuInput.addEventListener("click", function () {
+    input.value = "";
+})

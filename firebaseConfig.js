@@ -100,7 +100,6 @@ function selectData() {
                         name.toUpperCase() +
                         "</p>" +
                         "<p class='menuCommande'>" +
-                        " --> " +
                         menu +
                         "</p>" +
                         "</li>";

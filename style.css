@@ -151,15 +151,14 @@ h1 {
 }
 
 #commande li .dateCommande {
-    border: solid 2px #FAB21D;
     margin-right: 5px;
-    padding: 5px;
-    border-radius: 20px 0px 20px 0px;
+    width: 100px;
 }
 
 #commande li .usernameCommande {
     color: #AAAAAA;
     margin-right: 5px;
+    width: 150px;
 }
 
 #presentation p {
@@ -409,7 +408,7 @@ input#username {
 }
 
 input#menu {
-    width: 100%;
+    width: 90%;
     font: 700 16px 'Montserrat';
     padding: 12px 20px;
     border-radius: 3px;
@@ -418,6 +417,27 @@ input#menu {
     background-color: #000000;
     border: solid 2px #FAB21D;
     color: #fff;
+}
+
+#inputMenuAndbtnDelete {
+    display: flex;
+    align-items: center;
+}
+
+.fa-trash-can {
+    color: crimson;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    border: solid 2px crimson;
+}
+
+.fa-trash-can:hover {
+    background-color: crimson;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 /*
@@ -606,5 +626,24 @@ input#menu {
 
     .BurgerInCategory {
         width: 150px;
+    }
+
+    #commande li .dateCommande {
+        display: none
+    }
+
+    #commande li .usernameCommande {
+        margin: 0;
+    }
+
+    #commande li .menuCommande {
+        margin: 0;
+    }
+
+    #commande li {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin: 10px 0;
     }
 }

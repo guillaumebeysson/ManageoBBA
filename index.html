@@ -74,7 +74,10 @@
         <section>
             <h1 id="ecrisCommande">Écris ta commande !</h1>
             <input type="text" id="username" placeholder="Nom" required>
-            <input type="text" id="menu" placeholder="Sélectionne ton sandwitch ou écris directement ta commande" required></input>
+            <div id="inputMenuAndbtnDelete">
+                <input type="text" id="menu" placeholder="Sélectionne ton sandwitch ou écris directement ta commande" required></input>
+                <i id="deleteValueInputMenu" class="fa-regular fa-trash-can"></i>
+            </div>
             <button class="validBtn" id="valid">ok</button>
             <button class="validBtn" id="voirCommande">Voir les commandes</button>
             <ul id="commande" style="color: aliceblue;"></ul>
