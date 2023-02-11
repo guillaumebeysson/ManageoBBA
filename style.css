@@ -26,12 +26,21 @@ body {
 .messagePop {
     position: fixed;
     top: 30px;
-    right: 20px;
+    right: -300px;
     padding: 10px;
     border-radius: 10px;
     background-color: #FAB21D;
-    display: none;
-    transition: all 3s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.view {
+    position: fixed;
+    top: 30px;
+    right: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FAB21D;
+    transition: all 1s ease-in-out;
 }
 
 /*

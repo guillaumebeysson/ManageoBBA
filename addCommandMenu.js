@@ -4,13 +4,17 @@ let input = document.getElementById("menu");
 let messagePop = document.getElementById("messagePop");
 for (let btn of buttons) {
     btn.addEventListener("click", function () {
-        input.value += btn.getAttribute("data-info") + " + ";
+        if (input.value === "") {
+            input.value += btn.getAttribute("data-info");
+        } else {
+            input.value += " + " + btn.getAttribute("data-info");
+        }
         messagePop.innerHTML = "<i class='fa-solid fa-check'></i> " +
             btn.getAttribute("data-info") +
             " ajouté";
-        messagePop.style.display = "block";
+        messagePop.classList.add("view");
         setTimeout(function () {
-            messagePop.style.display = "none";
+            messagePop.classList.remove("view");
         }, 4000);
     });
 }
