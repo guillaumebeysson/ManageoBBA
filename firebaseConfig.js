@@ -53,6 +53,45 @@ function save() {
             setTimeout(function () {
                 messagePop.classList.remove("view");
             }, 4000);
+            // confetti quand commande est validée
+            document.body.classList.add("fun");
+            if (window.confetti) {
+                console.log("🎉");
+
+                var count = 200;
+                var defaults = {
+                    origin: { y: 0.7 }
+                };
+
+                function fire(particleRatio, opts) {
+                    confetti(Object.assign({}, defaults, opts, {
+                        particleCount: Math.floor(count * particleRatio)
+                    }));
+                }
+
+                fire(0.25, {
+                    spread: 26,
+                    startVelocity: 55,
+                });
+                fire(0.2, {
+                    spread: 60,
+                });
+                fire(0.35, {
+                    spread: 100,
+                    decay: 0.91,
+                });
+                fire(0.1, {
+                    spread: 120,
+                    startVelocity: 25,
+                    decay: 0.92,
+                });
+                fire(0.1, {
+                    spread: 120,
+                    startVelocity: 45,
+                });
+            }
+            ;
+
             console.log("commande envoyée");
         })
         .catch((error) => {
@@ -61,57 +100,6 @@ function save() {
     commandes.style.display = "none";
 }
 
-// function selectData() {
-//     // toggle pour afficher ou non les commandes
-//     if (commandes.style.display === "block") {
-//         commandes.style.display = "none";
-//     } else {
-//         commandes.style.display = "block";
-//     }
-//     // récupère les données de firebase
-//     const dbref = ref(db);
-//     get(dbref, username.value)
-//         .then((snapshot) => {
-//             var data = snapshot.val();
-//             document.getElementById("commande").innerHTML = "";
-//             if (snapshot.exists()) {
-//                 for (let i in data) {
-//                     console.log(data[i]);
-//                     // transforme la date sous forme de timestamp en DD/MM/YYYY
-//                     let timestamp = data[i].date;
-//                     let date = new Date(timestamp);
-//                     let options = {
-//                         day: "2-digit",
-//                         month: "2-digit",
-//                         year: "numeric",
-//                     };
-//                     let formattedDate = date.toLocaleDateString("fr-FR", options);
-//                     // récupère le nom
-//                     let name = data[i].username;
-//                     // récupère le menu
-//                     let menu = data[i].menu;
-//                     // push la date, le nom et le menu en html
-//                     document.getElementById("commande").innerHTML +=
-//                         "<li>" +
-//                         "<p class='dateCommande'>" +
-//                         formattedDate +
-//                         "</p>" +
-//                         "<p class='usernameCommande'>" +
-//                         name.toUpperCase() +
-//                         "</p>" +
-//                         "<p class='menuCommande'>" +
-//                         menu + " <i id='deleteCommandInFirebase' class='fa-regular fa-trash-can'></i>"
-//                     "</p>" +
-//                         "</li>";
-//                 }
-//             } else {
-//                 alert("No data found");
-//             }
-//         })
-//         .catch((error) => {
-//             alert("erreur " + error);
-//         });
-// }
 
 function selectData() {
     // toggle pour afficher ou non les commandes
