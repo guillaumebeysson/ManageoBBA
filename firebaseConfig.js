@@ -140,13 +140,14 @@ function selectData() {
                         name.toUpperCase() +
                         "</p>" +
                         "<p class='menuCommande'>" +
-                        menu + " <i id='deleteCommandInFirebase' class='fa-regular fa-trash-can'></i>"
+                        menu
+                    //+ " <i id='deleteCommandInFirebase' class='fa-regular fa-trash-can'></i>"
                     "</p>" +
                         "</li>";
-                    let deleteButton = document.getElementById("deleteCommandInFirebase");
-                    deleteButton.addEventListener("click", function () {
-                        delete (dbref, i.username);
-                    });
+                    // let deleteButton = document.getElementById("deleteCommandInFirebase");
+                    // deleteButton.addEventListener("click", function () {
+                    //     delete (dbref, i.username);
+                    // });
                 }
             } else {
                 alert("No data found");
