@@ -61,6 +61,58 @@ function save() {
     commandes.style.display = "none";
 }
 
+// function selectData() {
+//     // toggle pour afficher ou non les commandes
+//     if (commandes.style.display === "block") {
+//         commandes.style.display = "none";
+//     } else {
+//         commandes.style.display = "block";
+//     }
+//     // récupère les données de firebase
+//     const dbref = ref(db);
+//     get(dbref, username.value)
+//         .then((snapshot) => {
+//             var data = snapshot.val();
+//             document.getElementById("commande").innerHTML = "";
+//             if (snapshot.exists()) {
+//                 for (let i in data) {
+//                     console.log(data[i]);
+//                     // transforme la date sous forme de timestamp en DD/MM/YYYY
+//                     let timestamp = data[i].date;
+//                     let date = new Date(timestamp);
+//                     let options = {
+//                         day: "2-digit",
+//                         month: "2-digit",
+//                         year: "numeric",
+//                     };
+//                     let formattedDate = date.toLocaleDateString("fr-FR", options);
+//                     // récupère le nom
+//                     let name = data[i].username;
+//                     // récupère le menu
+//                     let menu = data[i].menu;
+//                     // push la date, le nom et le menu en html
+//                     document.getElementById("commande").innerHTML +=
+//                         "<li>" +
+//                         "<p class='dateCommande'>" +
+//                         formattedDate +
+//                         "</p>" +
+//                         "<p class='usernameCommande'>" +
+//                         name.toUpperCase() +
+//                         "</p>" +
+//                         "<p class='menuCommande'>" +
+//                         menu + " <i id='deleteCommandInFirebase' class='fa-regular fa-trash-can'></i>"
+//                     "</p>" +
+//                         "</li>";
+//                 }
+//             } else {
+//                 alert("No data found");
+//             }
+//         })
+//         .catch((error) => {
+//             alert("erreur " + error);
+//         });
+// }
+
 function selectData() {
     // toggle pour afficher ou non les commandes
     if (commandes.style.display === "block") {
@@ -100,17 +152,18 @@ function selectData() {
                         name.toUpperCase() +
                         "</p>" +
                         "<p class='menuCommande'>" +
-                        menu +
-                        "</p>" +
+                        menu + " <i id='deleteCommandInFirebase' class='fa-regular fa-trash-can'></i>"
+                    "</p>" +
                         "</li>";
+                    let deleteButton = document.getElementById("deleteCommandInFirebase");
+                    deleteButton.addEventListener("click", function () {
+                        delete (dbref, i.username);
+                    });
                 }
             } else {
                 alert("No data found");
             }
         })
-        .catch((error) => {
-            alert("erreur " + error);
-        });
 }
 
 valid.addEventListener("click", save);

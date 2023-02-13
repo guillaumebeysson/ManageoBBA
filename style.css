@@ -424,7 +424,7 @@ input#menu {
     align-items: center;
 }
 
-.fa-trash-can {
+#deleteValueInputMenu {
     color: crimson;
     margin-left: 10px;
     cursor: pointer;
@@ -433,11 +433,19 @@ input#menu {
     border: solid 2px crimson;
 }
 
-.fa-trash-can:hover {
+#deleteValueInputMenu:hover {
     background-color: crimson;
     color: #fafafa;
     padding: 10px;
     border-radius: 50%;
+}
+
+#deleteCommandInFirebase {
+    color: crimson;
+}
+
+#deleteCommandInFirebase:hover {
+    cursor: pointer;
 }
 
 /*
