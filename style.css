@@ -468,6 +468,8 @@ input#menu {
 
 .BurgerInCategory img {
     border-radius: 30px;
+    width: 200px;
+    height: 200px;
 }
 
 .BurgerTitleDescription p {
@@ -653,5 +655,10 @@ input#menu {
         flex-direction: column;
         align-items: start;
         margin: 10px 0;
+    }
+
+    .BurgerInCategory img {
+        width: 150px;
+        height: 150px;
     }
 }
