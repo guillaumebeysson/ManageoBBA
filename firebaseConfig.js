@@ -42,8 +42,8 @@ let messagePop = document.getElementById("messagePop");
 
 // Push en base
 function save() {
-    set(ref(db, username.value.toUpperCase()), {
-        username: username.value,
+    set(ref(db, username.value.toUpperCase().replace(/[<>\/()]/g, '')), {
+        username: username.value.replace(/[<>\/()]/g, ''),
         menu: menu.value,
         date: Date.now(),
     })
