@@ -116,7 +116,7 @@ function selectData() {
             document.getElementById("commande").innerHTML = "";
             if (snapshot.exists()) {
                 // trier par date
-                data = Object.values(data).sort((a, b) => a.date - b.date);
+                data = Object.values(data).sort((a, b) => b.date - a.date);
                 for (let i in data) {
                     console.log(data[i]);
                     // transforme la date sous forme de timestamp en DD/MM/YYYY
