@@ -42,9 +42,9 @@ let messagePop = document.getElementById("messagePop");
 
 // Push en base
 function save() {
-    set(ref(db, username.value.toUpperCase().replace(/[<>\/()]/g, '')), {
-        username: username.value.replace(/[<>\/()]/g, ''),
-        menu: menu.value,
+    set(ref(db, username.value.toUpperCase().replace(/[<>\/{};:"=()]/g, '')), {
+        username: username.value.replace(/[<>\/{};:="()]/g, ''),
+        menu: menu.value.replace(/[<>\/{};:="()]/g, ''),
         date: Date.now(),
     })
         .then(() => {
