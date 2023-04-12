@@ -182,6 +182,13 @@ h1 {
 }
 
 /*
+    Section qui va appeler
+*/
+#quiVaAppeler {
+    margin-top: 30px;
+}
+
+/*
     Section Dice
 */
 #sectionDice {
