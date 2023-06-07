@@ -529,6 +529,22 @@ input#menu {
     display: none;
 }
 
+.arrete{
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    width: 220px;
+    height: 432px;
+    background-color: #0000009c;
+    border-radius: 30px;
+    margin: -10px;
+    border: solid 3px #FAB21D;
+}
+.arrete p{
+    margin-top: 60px;
+    color: #fafafa;
+}
+
 @media screen and (max-width: 1000px) {
 
     .burger {
