@@ -684,4 +684,9 @@ input#menu {
         width: 150px;
         height: 150px;
     }
+    .arrete{
+        font-size: 25px;
+        width: 160px;
+        height: 382px;
+    }
 }
